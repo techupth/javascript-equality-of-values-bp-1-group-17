@@ -1,5 +1,9 @@
-function isPlainObject(value) {
-  // Start coding here
+function isPlainObject(obj) {
+  if (typeof obj === 'object' && obj !== null && !Array.isArray(obj)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Example case
